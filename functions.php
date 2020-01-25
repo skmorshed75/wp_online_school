@@ -10,8 +10,12 @@ function fictional_assets(){
 add_action('wp_enqueue_scripts','fictional_assets');
 
 //Class 11
-function fictional_after_setup_theme() {
+function fictional_after_setup_theme() {	
 	add_theme_support('title-tag');
+	//Class 16
+	register_nav_menu('headerMenuLocation', 'Header Menu Location');
+	register_nav_menu('footerLocationOne', 'Footer Location One');
+	register_nav_menu('footerLocationTwo', 'Footer Location Two');
 
 }
 add_action('after_setup_theme','fictional_after_setup_theme');
