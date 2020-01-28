@@ -25,5 +25,4 @@ add_action('after_setup_theme','fictional_after_setup_theme');
 
 
 
-
 ?>
