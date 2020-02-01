@@ -22,6 +22,13 @@ add_action('after_setup_theme','fictional_after_setup_theme');
 
 //Class 30
 function university_adjust_queries($query) {
+	//Class 32
+	if(!is_admin() AND is_post_type_archive('program') AND $query->is_main_query()) {
+		$query->set('posts_per_page', 2);
+		$query->set('orderby','title');
+		$query->set('order','ASC');
+	}
+	//Class 32 ends
 	if(!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()){
 		$today = date('Ymd');
 		$query->set('posts_per_page', 2);		

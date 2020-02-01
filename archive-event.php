@@ -21,8 +21,6 @@ get_header();
 	<?php
 	while(have_posts()) {
 		the_post(); ?>
-
-
  		<div class="event-summary">
           <a class="event-summary__date t-center" href="#">
             <span class="event-summary__month"><?php 
@@ -42,6 +40,9 @@ get_header();
 	<?php }
 	echo paginate_links();
 	?>
+
+	<hr class='section-break'>
+	<p>Looking for a Recap of Past Events? <a href="<?php echo site_url('/past-events'); ?>">Check out our past events archive</a></p>
 </div>
 
 <?php get_footer(); ?>
