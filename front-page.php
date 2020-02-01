@@ -44,9 +44,7 @@ get_header();
               echo $eventDate->format('M');
              ?></span>
             <span class="event-summary__day">
-
-              <?php echo $eventDate->format('d'); ?>
-              
+              <?php echo $eventDate->format('d'); ?>              
             </span>  
           </a>
           <div class="event-summary__content">
