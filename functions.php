@@ -12,6 +12,11 @@ add_action('wp_enqueue_scripts','fictional_assets');
 //Class 11
 function fictional_after_setup_theme() {	
 	add_theme_support('title-tag');
+	//Class 35
+	add_theme_support('post-thumbnails');
+	add_image_size('professorLandscape', 400, 260, true);
+	add_image_size('professorPortrait', 480, 650, true);
+
 	//Class 16
 	register_nav_menu('headerMenuLocation', 'Header Menu Location');
 	register_nav_menu('footerLocationOne', 'Footer Location One');
