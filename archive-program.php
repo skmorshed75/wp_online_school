@@ -23,8 +23,10 @@ get_header();
 	while(have_posts()) {
 		the_post(); ?>
 		<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-		<?php }
+		<?php 
+	}
 	echo paginate_links();
+	wp_reset_postdata();
 	?>
 	</ul>
 </div>
