@@ -3,18 +3,14 @@ get_header();
 
 while(have_posts()){
 	the_post();
+	//Class 37
+	pageBanner();
+	// pageBanner(array(
+	// 	'title' => 'Hello This is the Title',
+	// 	'subtitle' => 'Hi, this is the subtitle',
+	// 	'photo' => 'https://images.unsplash.com/photo-1558981285-501cd9af9426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+	// ));
 ?>
-
-
- <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/ocean.jpg') ?>)"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title"><?php the_title(); ?></h1>
-      <div class="page-banner__intro">
-        <p>Learn how the school of your dreams got started.</p>
-      </div>
-    </div>  
-  </div>
 
   <div class="container container--narrow page-section">
 	<?php
