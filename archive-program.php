@@ -1,6 +1,11 @@
 <?php
 //Class 32
 get_header();
+
+pageBanner(array(
+	'title' => __("All Programs","fictional"),
+	'subtitle' => __('There is something for everyone. Have a look around.', 'fictional')
+));
 ?>
 
 <div class="page-banner">
