@@ -1,12 +1,13 @@
 <?php
 get_header();
+
+echo 'ARCHIVE.PHP';
 pageBanner(array(
 	'title' => the_archive_title(),
 	'subtitle' => get_the_archive_description()
 ));
 
 ?> 
-
 
 <div class="container container--narrow page-section">
 	<?php

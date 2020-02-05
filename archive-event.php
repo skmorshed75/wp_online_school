@@ -1,6 +1,7 @@
 <?php
 //Class 26
 get_header();
+echo 'ARCHIVE-EVENT.PHP';
 
 pageBanner(array(
 	'title' => __("All Events","fictional"),

@@ -1,6 +1,6 @@
 <?php
 get_header();
-
+echo 'SINGLE-PROFESSOR.PHP';
 while(have_posts()){
 	the_post();
 	pageBanner();
@@ -8,10 +8,12 @@ while(have_posts()){
 	
 
 	<div class="container container--narrow page-section">
+		single-professor.php
 		<div class="generic-content">
 			<div class="generic-content">
 				<div class="row group">
 					<div class="one-third">
+
 						<?php the_post_thumbnail('professorPortrait'); ?>
 					</div>
 					<div class="two-thirds">

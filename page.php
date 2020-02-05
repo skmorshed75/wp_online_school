@@ -1,15 +1,15 @@
 <?php
 get_header();
-
+echo 'PAGE.PHP';
 while(have_posts()){
 	the_post();
 	//Class 37
-	pageBanner();
-	// pageBanner(array(
-	// 	'title' => 'Hello This is the Title',
-	// 	'subtitle' => 'Hi, this is the subtitle',
-	// 	'photo' => 'https://images.unsplash.com/photo-1558981285-501cd9af9426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
-	// ));
+	//pageBanner();
+	pageBanner(array(
+		'title' => 'Hello This is the Title page.php',
+		'subtitle' => 'Hi, this is the subtitle',
+		'photo' => 'https://images.unsplash.com/photo-1558981285-501cd9af9426?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+	));
 ?>
 
   <div class="container container--narrow page-section">

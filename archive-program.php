@@ -2,25 +2,13 @@
 //Class 32
 get_header();
 
+echo 'ARCHIVE-PROGRAM.PHP';
+
 pageBanner(array(
-	'title' => __("All Programs","fictional"),
+	'title' => __("All Programs arc-prog.php","fictional"),
 	'subtitle' => __('There is something for everyone. Have a look around.', 'fictional')
 ));
 ?>
-
-<div class="page-banner">
-	<div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/ocean.jpg') ?>)"></div>
-	<div class="page-banner__content container container--narrow">
-	  <h1 class="page-banner__title">
-	  	<?php echo esc_html('All Programs', 'fictional'); ?>
-	  </h1>
-	  <div class="page-banner__intro">
-	    <p>
-	    	<?php echo esc_html('There is something for everyone. Have a look around.', 'fictional'); ?>
-	    </p>
-	  </div>
-	</div>  
-</div>
 
 <div class="container container--narrow page-section">
 	<ul class="link-list min-list">

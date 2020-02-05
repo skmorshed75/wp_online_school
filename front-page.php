@@ -1,5 +1,6 @@
 <?php
 get_header();
+echo 'FRONT-PAGE.PHP';
 ?>
 
   <div class="page-banner">
