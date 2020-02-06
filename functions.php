@@ -33,6 +33,8 @@ function pageBanner($args = NULL){
 
 //Class 10
 function fictional_assets(){
+	//Class 41
+	wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDOWlnsDvbotiRIcKTO8ih65f8VqQLQNDA', NULL, '1.0', true);
 	wp_enqueue_style( "fictional-font-roboto", "//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i");
 	wp_enqueue_style("fictional-font-awesome", "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 	wp_enqueue_style("fictional-style", get_stylesheet_uri(),'null',time());
@@ -88,7 +90,7 @@ add_action('pre_get_posts','university_adjust_queries');
 
 //Class 40
 function universityMapKey($api) {
-	$api['key'] = 'AIzaSyDANua26OIZlS74UHctzYXzAyiy8Xycta8';
+	$api['key'] = 'AIzaSyDOWlnsDvbotiRIcKTO8ih65f8VqQLQNDA';
 	return $api;
 
 }
