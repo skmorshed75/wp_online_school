@@ -86,7 +86,13 @@ function university_adjust_queries($query) {
 }
 add_action('pre_get_posts','university_adjust_queries');
 
+//Class 40
+function universityMapKey($api) {
+	$api['key'] = 'AIzaSyDANua26OIZlS74UHctzYXzAyiy8Xycta8';
+	return $api;
 
+}
+add_filter('acf/fields/google_map/api','universityMapKey');
 
 
 
